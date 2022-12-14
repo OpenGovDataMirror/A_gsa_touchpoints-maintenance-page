@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Touchpoints - Maintenance Page</title>
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .bg-plug {
+      width: 100%;
+      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      position: relative;
+    }
+
+    .bg-plug::before {
+      background-image: url("/assets/img/maintenance_plug.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      opacity: 0.3;
+    }
+
+    article {
+      display: block;
+      margin: 0 auto;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #333;
+      text-decoration: none;
+    }
+
+    footer {
+      align-items: center;
+      border-top: 1px solid #E5E5E5;
+      bottom: 0;
+      left: 0;
+      padding-left: 10%;
+      position: fixed;
+      text-align: center;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    @media all and (max-width: 39.99em) {
+      h1 {
+        font-size: 32px;
+      }
+    }
+
+    @media all and (min-width: 40em) {
+      .usa-prose h1 {
+        margin-top: 75px;
+        font-size: 50px;
+      }
+
+      .message,
+      footer {
+        font-size: 22px;
+      }
+    }
+  </style>
+  <script src="/assets/js/all.js"></script>
+</head>
+
+<body class="bg-plug">
+  <div class="usa-banner">
+    <div class="usa-accordion">
+      <header class="usa-banner__header">
+        <div class="usa-banner__inner">
+          <div class="grid-col-auto">
+            <img class="usa-banner__header-flag" src="/assets/img/us_flag_small.png" alt="U.S. flag">
+          </div>
+          <div class="grid-col-fill tablet:grid-col-auto">
+            <p class="usa-banner__header-text">An official website of the United States government</p>
+            <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+          </div>
+          <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+            <span class="usa-banner__button-text">Here’s how you know</span>
+          </button>
+        </div>
+      </header>
+      <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+        <div class="grid-row grid-gap-lg">
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img class="usa-banner__icon usa-media-block__img" src="/assets/img/icon-dot-gov.svg" alt="Dot gov">
+            <div class="usa-media-block__body">
+              <p>
+                <strong>The .gov means it’s official.</strong>
+                <br> Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+              </p>
+            </div>
+          </div>
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img class="usa-banner__icon usa-media-block__img" src="/assets/img/icon-https.svg" alt="Https">
+            <div class="usa-media-block__body">
+              <p>
+                <strong>The site is secure.</strong>
+                <br> The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col">
+        <div style="text-align: center;">
+          <img src="/assets/img/touchpoints-logo-@2x.png" alt="Touchpoints logo">
+        </div>
+        <br>
+        <br>
+        <article class="usa-prose" style="text-align: center;">
+          <h1 class="">
+            This site is currently undergoing maintenance.
+          </h1>
+          <div class="message">
+            <p>
+              We apologize for any inconvenience this may cause.
+              <br>
+              We'll be done soon!
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-col">
+        <footer>
+          Questions?
+          Email:&nbsp;
+          <a href="mailto:feedback-analytics@gsa.gov">feedback-analytics@gsa.gov</a>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
